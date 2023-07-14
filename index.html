@@ -21,8 +21,26 @@
       <input type="text" id="player2-name" placeholder="Enter Player 2 name">
       <input type="color" id="player2-color" value="#0000ff">
     </div>
-    <button id="start-btn">Start Game</button>
+    <button onclick="displayPopup()" id="start-btn">Start Game</button>
   </div>
+
+
+  <div class="popup1" id="popup1">
+    <h2>Hello, World!</h2>
+    <p>please enter the both players name</p>
+    <button onclick="closePopup()">Close</button>
+  </div>
+
   <script src="script.js"></script>
+
+  <script>
+    
+
+    // Function to close the pop-up
+    function closePopup() {
+      var popup = document.getElementById("popup1");
+      popup.style.display = "none";
+    }
+  </script>
 </body>
 </html>
